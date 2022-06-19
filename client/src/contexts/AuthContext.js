@@ -1,12 +1,14 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { auth } from '../config/firebase'
 import { createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signOut, updateProfile, updateEmail, updatePassword } from '@firebase/auth'
+// importing the firebase auth function and using in the project
 
 const AuthContext = React.createContext()
 export function useAuth() {
     return useContext(AuthContext);
 }
 
+// user signup
 const signup = async(email, password, firstName, lastName, phone) => {
     return createUserWithEmailAndPassword(auth, email, password)
     .then((res) => {
@@ -17,6 +19,7 @@ const signup = async(email, password, firstName, lastName, phone) => {
     
 }
 
+// doctor signup
 const drSignup = async(email, password, drName ) => {
     return createUserWithEmailAndPassword(auth, email, password)
     .then((res) => {

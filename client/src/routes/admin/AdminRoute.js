@@ -9,6 +9,7 @@ function AdminRoute({component: Component, ...rest }) {
         <Route
             {...rest}
             render={props => {
+                // if user id === admin id
                 return currentUser !== null && (currentUser.uid).includes('koczTnaWJYfySf22776iSu9ePOj2')
                 ? <Component {...props}  /> 
                 : <Redirect to="/patient" />

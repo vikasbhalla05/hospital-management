@@ -9,6 +9,7 @@ function DoctorRoute({component: Component, ...rest }) {
         <Route
             {...rest}
             render={props => {
+                // if user is a doctor
                 return (currentUser !== null && (currentUser.displayName || currentUser.email).includes('Dr.'))
                 ? <Component {...props}  /> 
                 : <Redirect to="/patient" />

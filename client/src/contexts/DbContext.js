@@ -1,6 +1,6 @@
 import React,{ useContext, useState, useEffect } from 'react'
 import { db } from '../config/firebase'
-import { collection, getDocs, addDoc, deleteDoc, doc, query, where, updateDoc } from 'firebase/firestore'
+import { collection, getDocs, addDoc, deleteDoc, doc, query, where, updateDoc } from 'firebase/firestore' // CRUD operation on firestore DB
 import { useAuth } from './AuthContext';
 
 const DbContext = React.createContext()
@@ -20,7 +20,7 @@ export default function DbProvider({ children }) {
     const [allAppointments, setAllAppointments] = useState([]);
     const [allPrescriptions, setAllPrescriptions] = useState([]);
 
-
+    // accessing the firestore collections 
     const usersCollectionRef = collection(db, "users");
     const doctorsCollectionRef = collection(db, "doctors");
     const appointmentsCollectionRef = collection(db, "appointments");
