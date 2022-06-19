@@ -1,10 +1,6 @@
 # hospital-management-system
 An application system that help's to effectively administer and manage information about patients and health professionals.
 
-## Demo :rocket:
-Try hospital management system with the Netlify demo<br>
-Link to demo ----> [Hospital management system](https://hospital-management-sys.netlify.app/)<br>
-
 
 ***The HMS application is composed of the following user roles:***
 
@@ -74,13 +70,13 @@ Follow the following steps to get development environment running.
 - Clone _'hospital-management-system'_ repository from GitHub
 
   ```bash
-  git clone https://github.com/khethelogp/hospital-management-system
+  git clone https://github.com/vikasbhalla05/hospital-management.git
   ```
 
   _OR USING SSH_
 
   ```bash
-  git clone git@github.com:khethelogp/hospital-management-system.git
+  git clone git@github.com:vikasbhalla05/hospital-management.git
   ```
 
   - Install node modules
@@ -105,12 +101,8 @@ Before continuing, the following steps are required:
      Have a look at [Firebase](https://console.firebase.google.com/)
      
    - Inside your client directory "/client" have a .env file 
-     
-     <img src="https://i.ibb.co/9NLxt4F/Screenshot-2022-04-07-at-11-07-01.png" alt="env file">
-     
+          
 2. Firebase collections/tables
-
-    <img src="https://i.ibb.co/hWMQPD9/Screenshot-2022-03-31-at-09-50-38.png" alt="collections">
 
 
 ### Build
@@ -137,6 +129,5 @@ Before continuing, the following steps are required:
 
 ## References
 
-https://github.com/khethelogp/hospital-management-system
 
-Made with :heart: by KhetheloGP
+Made with :heart: as H2Archives
