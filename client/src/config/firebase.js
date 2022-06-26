@@ -18,6 +18,12 @@ const app = initializeApp({
   measurementId: "G-F6H13FCG9B"
 });
 
+
+
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export default app;
+
 // const app = initializeApp({
 //     apiKey: "AIzaSyC2qDAGvDeBUkZyVkJr28e98r0UXXteW6I",
 //     authDomain: "ledger-94c67.firebaseapp.com",
@@ -27,7 +33,3 @@ const app = initializeApp({
 //     appId: "1:342030470753:web:4a939f47d4eff715f46420",
 //     measurementId: "G-41E8E8R1ZC"
 // });
-
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-export default app;

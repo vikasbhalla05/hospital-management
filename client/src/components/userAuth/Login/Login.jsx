@@ -54,7 +54,7 @@ const Login = () => {
     //TODO render admin to admin and have admin route
     useEffect(() => {
         if(currentUser!== null){
-            if((currentUser.uid).includes('Mb9KHFgNNhYI4tbRCA1iEqjrkki1')){
+            if((currentUser.uid).includes('koczTnaWJYfySf22776iSu9ePOj2')){
                 console.log("YOU ARE THE ADMIN")
             }
         }

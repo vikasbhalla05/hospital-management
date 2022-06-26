@@ -11,7 +11,7 @@ import { Alert } from '@mui/material';
 import { useDB } from '../../../contexts/DbContext';
 
 
-import bgImage from "../../../assets/bg-4.jpg";
+import bgImage from "../../../assets/bg-1.jpg";
 const styles = {
     signUpBG: {
         backgroundImage: `url(${bgImage})`,
